@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All the HTML elements</title>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/reveal.js/dist/theme/dracula.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/reveal.js/plugin/highlight/zenburn.css"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>All the HTML Elements</h3>
+          <img src="public/name-five-elements.png" />
+        </section>
+
+        <section id="elements-of-html">
+          <h3>The Elements of HTML</h3>
+          <p>The list of elements keep changing.</p>
+          <a href="https://html.spec.whatwg.org/#semantics">Living spec</a>
+        </section>
+
+        <section>
+          <h3>&lt;html &gt;</h3>
+          <ul>
+            <li>The document element that contains the head and body</li>
+            <li>The `lang` used here is used to aid text to speech tools</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h3>Document Metadata</h3>
+          </section>
+          <section>
+            <h3>&lt;head &gt;</h3>
+            <p>machine-readable information (metadata) about the document</p>
+          </section>
+          <section>
+            <h3>&lt;title&gt;</h3>
+            <p>document's title</p>
+          </section>
+          <section>
+            <h3>&lt;base&gt;</h3>
+            <p>base URL for relative URLs in the page</p>
+          </section>
+          <section>
+            <h3>&lt;link&gt;</h3>
+            <p>link to an external resource</p>
+            <ul>
+              <li>Mainly used for styles</li>
+              <li>Defining icons and favicons</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;style&gt;</h3>
+            <p>CSS applied to document</p>
+          </section>
+          <section>
+            <h3>&lt;meta&gt;</h3>
+            <p>metadata about the document</p>
+            <ul>
+              <li>character set</li>
+              <li>description</li>
+              <li>viewport</li>
+              <li>etc.</li>
+            </ul>
+            <p></p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>2. Sectioning elements</h3>
+          </section>
+          <section>
+            <h3>&lt;body&gt;</h3>
+            <p>document's content</p>
+          </section>
+          <section>
+            <h3>&lt;article&gt;</h3>
+            <ul>
+              <li>self-contained composition</li>
+              <li>'article of clothing' not 'blog article'</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;section&gt;</h3>
+            <ul>
+              <li>section of article with header and text</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;nav&gt;</h3>
+            <ul>
+              <li>Section with navigation links</li>
+              <li>Examples: header menu, table of content</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;aside&gt;</h3>
+            <ul>
+              <li>Section with tangentially related content</li>
+              <li>Content tangentially related to content</li>
+            </ul>
+            <img src="public/aside.png" />
+          </section>
+          <section>
+            <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
+            <p>Headings</p>
+          </section>
+          <section>
+            <h3>&lt;hgroup&gt;</h3>
+            <ul>
+              <li>A heading + paragraph</li>
+              <li>Used to be a group of heading</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;header&gt;</h3>
+            <ul>
+              <li>Can be a site wide header banner</li>
+              <li>Also, can be an article header</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;footer&gt;</h3>
+            <ul>
+              <li>Footer for nearest ancestor sectioning content</li>
+              <li>Or site wide footer</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;address&gt;</h3>
+            <ul>
+              <li>Contact information - address, email etc.</li>
+              <li>FunFact - https://en.wikipedia.org/wiki/Semantic_Web</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Grouping Content</h3>
+          </section>
+          <section>
+            <h3>&lt;p&gt;</h3>
+            <p>Paragraph</p>
+            <code-preview>
+              <p>A paragraph!</p>
+            </code-preview>
+          </section>
+          <section>
+            <h3>&lt;hr&gt;</h3>
+            <p>Thematic break between paragraph-level elements</p>
+            <code-preview>
+              <p>This is a paragraph</p>
+              <hr />
+              <p>This is another paragraph</p>
+            </code-preview>
+          </section>
+          <section>
+            <h3>&lt;pre&gt;</h3>
+            <p>Preformatted text</p>
+            <code-preview>
+              <pre>
+function() {
+  console.log('Hello World');
+}
+</pre
+              >
+            </code-preview>
+          </section>
+          <section>
+            <h3>&lt;blockquote&gt;</h3>
+            <p>Longer quote from another source</p>
+            <code-preview>
+              <blockquote>
+                <p>
+                  The blockquote element represents content that is quoted from
+                  another source, optionally with a citation which must be
+                  within a footer or cite element, and optionally with in-line
+                  changes such as annotations and abbreviations.
+                </p>
+              </blockquote>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;ol&gt; and &lt;li&gt;</h3>
+            <p>Ordered list</p>
+            <code-preview>
+              <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ol>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;ul&gt;</h3>
+            <p>Unordered list</p>
+            <code-preview>
+              <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ul>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;menu&gt;</h3>
+            <p>Same as ul</p>
+          </section>
+
+          <section>
+            <h3>&lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt;</h3>
+            <p>Definition list</p>
+            <code-preview>
+              <dl>
+                <dt>Definition term</dt>
+                <dd>Definition description</dd>
+
+                <dt>Definition term</dt>
+                <dd>Definition description</dd>
+              </dl>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;figure&gt; and &lt;figcaption&gt;</h3>
+            <p>Figure with caption</p>
+            <code-preview>
+              <figure>
+                <img src="public/figure.png" />
+                <figcaption>Figure caption</figcaption>
+              </figure>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;main&gt;</h3>
+            <p>
+              Content that is directly related to or expands upon the central
+              topic of a document
+            </p>
+            <code-preview>
+              <main>
+                <p>Article content</p>
+              </main>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;div&gt;</h3>
+            <p>Generic container</p>
+            <code-preview>
+              <div>
+                <p>Article content</p>
+              </div>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;search&gt;</h3>
+            <p>New!</p>
+            https://www.scottohara.me/blog/2023/03/24/search-element.html
+          </section>
+        </section>
+
+        <section>
+          <h3>Text-level semantics</h3>
+        </section>
+
+        <section>
+          <h3>Links</h3>
+        </section>
+
+        <section>
+          <h3>Edits</h3>
+        </section>
+
+        <section>
+          <h3>Embedded content</h3>
+        </section>
+
+        <section>
+          <h3>Tabular data</h3>
+        </section>
+
+        <section>
+          <h3>Forms</h3>
+        </section>
+
+        <section>
+          <h3>Interactive elements</h3>
+        </section>
+
+        <section>
+          <h3>Scripting</h3>
+        </section>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
