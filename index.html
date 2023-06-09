@@ -80,7 +80,7 @@
 
         <section>
           <section>
-            <h3>2. Sectioning elements</h3>
+            <h3>Sectioning elements</h3>
           </section>
           <section>
             <h3>&lt;body&gt;</h3>
@@ -280,35 +280,342 @@ function() {
         </section>
 
         <section>
-          <h3>Text-level semantics</h3>
+          <section>
+            <h3>Text-level semantics</h3>
+          </section>
+
+          <section>
+            <h3>&lt;a&gt;</h3>
+            <p>Hyperlink</p>
+            <code-preview>
+              <a href="https://...">Google</a>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;em&gt;</h3>
+            <p>Emphasis</p>
+            <code-preview>
+              <p>
+                <em
+                  >Stress emphasis to a sentence - ex - "This is very important"
+                </em>
+              </p>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;i&gt;</h3>
+            <ul>
+              <li>Idiomatic text</li>
+              <li>Alternate voice or mood</li>
+              <li>Technical term</li>
+              <li>Foreign language phrase</li>
+              <li>Book title, movie title, etc.</li>
+              <br />
+            </ul>
+            <code-preview>
+              <p>I thought <i>This can't be real!</i></p>
+
+              <p>
+                <i>Musa</i> is one of two or three genera in the family
+                <i>Musaceae</i>; it includes bananas and plantains.
+              </p>
+              <p></p
+            ></code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;strong&gt;</h3>
+            <p>Strong importance of a sentence</p>
+            <code-preview>
+              <p>
+                <strong>Never feed him after midnight</strong>
+              </p>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;b&gt;</h3>
+            <p>
+              Stylistically different text without conveying extra importance
+            </p>
+            <code-preview>
+              <p>
+                <b
+                  >Stylistically different text without conveying extra
+                  importance</b
+                >
+                can be in the b tag
+              </p>
+            </code-preview>
+          </section>
+
+          <!-- ruby, rt and rp -->
+          <section>
+            <h3>&lt;ruby&gt;, &lt;rt&gt; and &lt;rp&gt;</h3>
+            <p>Mainly used to annotate CJK characters</p>
+            <ul>
+              <li>ruby - container for base text</li>
+              <li>rt - container for ruby text</li>
+              <li>rp - container for fallback parenthesis</li>
+            </ul>
+
+            <br />
+
+            <code-preview>
+              <ruby>
+                නි <rp>(</rp><rt>ni</rt><rp>)</rp>
+
+                පු <rp>(</rp><rt>pu</rt><rp>)</rp>
+
+                ණ <rp>(</rp><rt>na</rt><rp>)</rp>
+              </ruby>
+            </code-preview>
+          </section>
+
+          <!-- small -->
+
+          <!-- s -->
+
+          <!-- cite -->
+
+          <!-- q -->
+
+          <!-- dfn -->
+
+          <!-- abbr -->
+
+          <!-- data -->
+
+          <!-- time -->
+
+          <!-- code -->
+
+          <!-- var -->
+
+          <!-- samp -->
+
+          <!-- kbd -->
+
+          <!-- sub -->
+
+          <!-- sup -->
+
+          <!-- u -->
+
+          <!-- mark -->
+
+          <!-- bdi -->
+
+          <!-- bdo -->
+
+          <!-- span -->
+
+          <!-- br -->
+
+          <!-- wbr -->
         </section>
 
         <section>
-          <h3>Links</h3>
+          <section>
+            <h3>Links</h3>
+          </section>
+
+          <section>
+            <h3>&lt;a&gt;</h3>
+            <p>Hyperlink</p>
+            <code-preview>
+              <a href="https://...">Google</a>
+            </code-preview>
+          </section>
         </section>
 
         <section>
-          <h3>Edits</h3>
+          <section>
+            <h3>Edits</h3>
+          </section>
+
+          <section>
+            <h3>&lt;ins&gt;</h3>
+            <p>Inserted text - can be used for diffs</p>
+            <code-preview>
+              <p>Some <ins>inserted text</ins></p>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;del&gt;</h3>
+            <p>Deleted text</p>
+            <code-preview>
+              <p>Some <del>deleted text</del></p>
+            </code-preview>
+          </section>
         </section>
 
         <section>
-          <h3>Embedded content</h3>
+          <section>
+            <h3>Embedded content</h3>
+          </section>
+
+          <!-- picture -->
+
+          <!-- source -->
+
+          <!-- img -->
+
+          <!-- iframe -->
+
+          <!-- embed -->
+
+          <!-- object -->
+
+          <!-- video -->
+
+          <!-- audio -->
+
+          <!-- track -->
+
+          <!-- map -->
+
+          <!-- area -->
         </section>
 
         <section>
-          <h3>Tabular data</h3>
+          <section>
+            <h3>Tabular data</h3>
+          </section>
+
+          <!-- table, thead, tbody, tr, th, td -->
+          <section>
+            <h3>
+              &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;,
+              &lt;th&gt;, &lt;td&gt;
+            </h3>
+            <code-preview>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Table header</th>
+                    <th>Table header</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                </tbody>
+              </table>
+            </code-preview>
+          </section>
+
+          <!-- caption, colgroup, col -->
+          <section>
+            <h3>&lt;caption&gt;, &lt;colgroup&gt;, &lt;col&gt;</h3>
+            <code-preview>
+              <table>
+                <style>
+                  .first-col-group {
+                    background-color: darkgray;
+                  }
+                </style>
+                <caption>
+                  Table caption
+                </caption>
+                <colgroup>
+                  <col span="2" class="first-col-group" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Table header</th>
+                    <th>Table header</th>
+                    <th>Other header</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                </tbody>
+              </table>
+            </code-preview>
+          </section>
         </section>
 
         <section>
-          <h3>Forms</h3>
+          <section>
+            <h3>Forms</h3>
+          </section>
+
+          <!-- form, input, label, textarea, button -->
+
+          <!-- select, option, optgroup -->
+
+          <!-- datalist -->
+
+          <!-- output -->
+
+          <!-- progress -->
+
+          <!-- meter -->
+
+          <!-- fieldset, legend -->
         </section>
 
         <section>
-          <h3>Interactive elements</h3>
+          <section>
+            <h3>Interactive elements</h3>
+          </section>
+
+          <!-- details, summary -->
+          <section>
+            <h3>&lt;details&gt;, &lt;summary&gt;</h3>
+            <code-preview>
+              <details>
+                <summary>Click to expand</summary>
+                <p>Details text</p>
+              </details>
+            </code-preview>
+          </section>
+
+          <!-- dialog -->
+          <section>
+            <h3>&lt;dialog&gt; *new*</h3>
+            <code-preview>
+              <dialog open>
+                <p>Dialog text</p>
+              </dialog>
+            </code-preview>
+          </section>
         </section>
 
         <section>
-          <h3>Scripting</h3>
+          <section>
+            <h3>Scripting</h3>
+          </section>
+
+          <!-- script -->
+
+          <!-- noscript -->
+
+          <!-- template -->
+
+          <!-- canvas -->
+
+          <!-- slot -->
         </section>
       </div>
     </div>
