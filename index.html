@@ -30,7 +30,7 @@
         </section>
 
         <section>
-          <h3>&lt;html &gt;</h3>
+          <element-heading count="1" element="html"></element-heading>
           <ul>
             <li>The document element that contains the head and body</li>
             <li>The `lang` used here is used to aid text to speech tools</li>
@@ -42,72 +42,101 @@
             <h3>Document Metadata</h3>
           </section>
           <section>
-            <h3>&lt;head &gt;</h3>
+            <element-heading count="2" element="head"></element-heading>
             <p>machine-readable information (metadata) about the document</p>
           </section>
           <section>
-            <h3>&lt;title&gt;</h3>
+            <element-heading count="3" element="title"></element-heading>
             <p>document's title</p>
+            <code-preview hidePreview="true">
+              <title>Document title</title>
+            </code-preview>
           </section>
           <section>
-            <h3>&lt;base&gt;</h3>
+            <element-heading count="4" element="base" />
             <p>base URL for relative URLs in the page</p>
+
+            <pre>
+              <code>&lt;base href="http://example.com" &gt;
+                ... 
+<!-- will point to http://example.com/public/test.png -->
+&lt;img src="public/test.png"&gt;
+              </code>
+            </pre>
           </section>
           <section>
-            <h3>&lt;link&gt;</h3>
+            <element-heading count="5" element="link" />
             <p>link to an external resource</p>
-            <ul>
-              <li>Mainly used for styles</li>
-              <li>Defining icons and favicons</li>
-            </ul>
+            <code-preview hidePreview="true">
+              <link rel="stylesheet" href="style.css" />
+              <link rel="icon" href="favicon.png" />
+            </code-preview>
           </section>
           <section>
-            <h3>&lt;style&gt;</h3>
+            <element-heading count="6" element="style" />
             <p>CSS applied to document</p>
+            <code-preview hidePreview="true">
+              <style>
+                body {
+                  ... styles
+                }
+              </style>
           </section>
           <section>
-            <h3>&lt;meta&gt;</h3>
+            <element-heading count="7" element="meta" />
             <p>metadata about the document</p>
-            <ul>
-              <li>character set</li>
-              <li>description</li>
-              <li>viewport</li>
-              <li>etc.</li>
-            </ul>
-            <p></p>
+            <code-preview hidePreview="true">
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width" />
+              <meta name="description" content="Page description" />
+            </code-preview>
           </section>
         </section>
 
+        <!-- Sectioning Elements -->
         <section>
           <section>
-            <h3>Sectioning elements</h3>
+            <h3>Sectioning Elements</h3>
           </section>
           <section>
-            <h3>&lt;body&gt;</h3>
+            <element-heading count="8" element="body"></element-heading>
             <p>document's content</p>
           </section>
           <section>
-            <h3>&lt;article&gt;</h3>
+            <element-heading count="9" element="article"></element-heading>
             <ul>
               <li>self-contained composition</li>
               <li>'article of clothing' not 'blog article'</li>
             </ul>
+            <code-preview>
+              <article>
+                <p>Nipuna G - 2022/01/03 - Comment</p>
+                <p>Here's some comment that makes sense out of the document</p>
+              </article>
           </section>
           <section>
-            <h3>&lt;section&gt;</h3>
+            <element-heading count="10" element="section"></element-heading>
             <ul>
               <li>section of article with header and text</li>
+              <li>aria tags not set automatically</li>
             </ul>
+            <code-preview>
+              <article>
+                <section>
+                  <h3>Section heading</h3>
+                  <p>Section text</p>
+                </section>
+              </article>
           </section>
           <section>
-            <h3>&lt;nav&gt;</h3>
+            <element-heading count="11" element="nav"></element-heading>
             <ul>
               <li>Section with navigation links</li>
               <li>Examples: header menu, table of content</li>
             </ul>
           </section>
           <section>
-            <h3>&lt;aside&gt;</h3>
+            <element-heading count="12" element="aside"></element-heading>
             <ul>
               <li>Section with tangentially related content</li>
               <li>Content tangentially related to content</li>
@@ -115,52 +144,81 @@
             <img src="public/aside.png" />
           </section>
           <section>
-            <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
-            <p>Headings</p>
+            <element-heading count="13-18" element="h1-h6"></element-heading>
+            <code-preview>
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </code-preview>
           </section>
           <section>
-            <h3>&lt;hgroup&gt;</h3>
+            <element-heading count="19" element="hgroup"></element-heading>
             <ul>
               <li>A heading + paragraph</li>
               <li>Used to be a group of heading</li>
             </ul>
+            <code-preview>
+              <hgroup>
+                <h1>Heading 1</h1>
+                <p>Heading 1 description</p>
+              </hgroup>
           </section>
           <section>
-            <h3>&lt;header&gt;</h3>
+            <element-heading count="20" element="header"></element-heading>
             <ul>
               <li>Can be a site wide header banner</li>
               <li>Also, can be an article header</li>
             </ul>
+            <code-preview>
+              <header>
+                <span>Site wide header</span>
+                <!-- can have logos nav etc. -->
+              </header>
           </section>
           <section>
-            <h3>&lt;footer&gt;</h3>
+            <element-heading count="21" element="footer"></element-heading>
             <ul>
               <li>Footer for nearest ancestor sectioning content</li>
               <li>Or site wide footer</li>
             </ul>
+            <code-preview>
+              <footer>
+                <p>Site wide footer</p>
+              </footer>
+              <!-- can have nav -->
+              </code-preview>
           </section>
           <section>
-            <h3>&lt;address&gt;</h3>
+            <element-heading count="22" element="address"></element-heading>
             <ul>
               <li>Contact information - address, email etc.</li>
               <li>FunFact - https://en.wikipedia.org/wiki/Semantic_Web</li>
             </ul>
+            <code-preview>
+
+              <address>
+                <a href="mailto:foo@bar.com">foo@bar.com</a>
+              </address>
           </section>
         </section>
 
+        <!-- Grouping Content -->
         <section>
           <section>
             <h3>Grouping Content</h3>
           </section>
           <section>
-            <h3>&lt;p&gt;</h3>
+            <element-heading count="23" element="p"></element-heading>
             <p>Paragraph</p>
             <code-preview>
               <p>A paragraph!</p>
             </code-preview>
           </section>
           <section>
-            <h3>&lt;hr&gt;</h3>
+            <element-heading count="24" element="hr"></element-heading>
             <p>Thematic break between paragraph-level elements</p>
             <code-preview>
               <p>This is a paragraph</p>
@@ -169,7 +227,7 @@
             </code-preview>
           </section>
           <section>
-            <h3>&lt;pre&gt;</h3>
+            <element-heading count="25" element="pre"></element-heading>
             <p>Preformatted text</p>
             <code-preview>
               <pre>
@@ -181,7 +239,7 @@ function() {
             </code-preview>
           </section>
           <section>
-            <h3>&lt;blockquote&gt;</h3>
+            <element-heading count="26" element="blockquote"></element-heading>
             <p>Longer quote from another source</p>
             <code-preview>
               <blockquote>
@@ -196,7 +254,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;ol&gt; and &lt;li&gt;</h3>
+            <element-heading count="27-28" element="ol - li"></element-heading>
             <p>Ordered list</p>
             <code-preview>
               <ol>
@@ -208,7 +266,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;ul&gt;</h3>
+            <element-heading count="29" element="ul"></element-heading>
             <p>Unordered list</p>
             <code-preview>
               <ul>
@@ -220,12 +278,12 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;menu&gt;</h3>
+            <element-heading count="30" element="menu"></element-heading>
             <p>Same as ul</p>
           </section>
 
           <section>
-            <h3>&lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt;</h3>
+            <element-heading count="31-33" element="dl, dt and dd"></element-heading>
             <p>Definition list</p>
             <code-preview>
               <dl>
@@ -239,18 +297,18 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;figure&gt; and &lt;figcaption&gt;</h3>
+            <element-heading count="34-35" element="figure, figcaption"></element-heading>
             <p>Figure with caption</p>
             <code-preview>
               <figure>
                 <img src="public/figure.png" />
-                <figcaption>Figure caption</figcaption>
+                <figcaption>Sharknado</figcaption>
               </figure>
             </code-preview>
           </section>
 
           <section>
-            <h3>&lt;main&gt;</h3>
+            <element-heading count="36" element="main"></element-heading>
             <p>
               Content that is directly related to or expands upon the central
               topic of a document
@@ -263,7 +321,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;div&gt;</h3>
+            <element-heading count="37" element="div"></element-heading>
             <p>Generic container</p>
             <code-preview>
               <div>
@@ -273,19 +331,20 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;search&gt;</h3>
+            <element-heading count="38" element="search"></element-heading>
             <p>New!</p>
             https://www.scottohara.me/blog/2023/03/24/search-element.html
           </section>
         </section>
 
+        <!-- Text-level Semantics -->
         <section>
           <section>
-            <h3>Text-level semantics</h3>
+            <h3>Text-level Semantics</h3>
           </section>
 
           <section>
-            <h3>&lt;a&gt;</h3>
+            <element-heading count="39" element="a"></element-heading>
             <p>Hyperlink</p>
             <code-preview>
               <a href="https://...">Google</a>
@@ -293,7 +352,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;em&gt;</h3>
+            <element-heading count="40" element="em"></element-heading>
             <p>Emphasis</p>
             <code-preview>
               <p>
@@ -305,7 +364,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;i&gt;</h3>
+            <element-heading count="41" element="i"></element-heading>
             <ul>
               <li>Idiomatic text</li>
               <li>Alternate voice or mood</li>
@@ -326,7 +385,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;strong&gt;</h3>
+            <element-heading count="42" element="strong"></element-heading>
             <p>Strong importance of a sentence</p>
             <code-preview>
               <p>
@@ -336,7 +395,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;b&gt;</h3>
+            <element-heading count="43" element="b"></element-heading>
             <p>
               Stylistically different text without conveying extra importance
             </p>
@@ -353,7 +412,7 @@ function() {
 
           <!-- ruby, rt and rp -->
           <section>
-            <h3>&lt;ruby&gt;, &lt;rt&gt; and &lt;rp&gt;</h3>
+            <element-heading count="44-46" element="ruby, rt and rp"></element-heading>
             <p>Mainly used to annotate CJK characters</p>
             <ul>
               <li>ruby - container for base text</li>
@@ -375,46 +434,233 @@ function() {
           </section>
 
           <!-- small -->
+          <section>
+            <element-heading count="47" element="small"></element-heading>
+            <p>Side comments, small print, etc.</p>
+            <code-preview>
+              <p>
+                <small>small print.</small>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- s -->
+          <section>
+            <element-heading count="48" element="s"></element-heading>
+            <p>Content that is no longer accurate or relevant</p>
+            <code-preview>
+              <p>
+                <s>Strike through text</s>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- cite -->
+          <section>
+            <element-heading count="49" element="cite"></element-heading>
+            <p>Reference to a creative work</p>
+            <code-preview>
+              <p>
+                The book, 
+                <cite><a href="">Harry Potter</a>
+                </cite>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- q -->
+          <section>
+            <element-heading count="50" element="q"></element-heading>
+            <p>Short inline quotation</p>
+            <code-preview>
+              <p>
+                Short <q>'quotation from someone'</q> that's inline
+              </p>
+            </code-preview>
+          </section>
 
           <!-- dfn -->
+          <section>
+            <element-heading count="51" element="dfn"></element-heading>
+            <p>Definition of a term</p>
+            <code-preview>
+              <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+            </code-preview>
+          </section>
 
           <!-- abbr -->
+          <section>
+            <element-heading count="52" element="abbr"></element-heading>
+            <p>Abbreviation - can be combined with dfn</p>
+            <code-preview>
+              <p>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- data -->
+          <section>
+            <element-heading count="53" element="data"></element-heading>
+            <p>Machine readable equivalent of the content</p>
+            <code-preview>
+              <p>
+                <data value="123">123</data>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- time -->
+          <section>
+            <element-heading count="54" element="time"></element-heading>
+            <p>Machine readable equivalent of the time</p>
+            <code-preview>
+              <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+            </code-preview>
+          </section>
 
           <!-- code -->
+          <section>
+            <element-heading count="55" element="code"></element-heading>
+            <p>Computer code - can be used with `pre` tag for longer code</p>
+            <code-preview>
+              <p>
+                <code>const foo = 'bar';</code>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- var -->
+          <section>
+            <element-heading count="56" element="var"></element-heading>
+            <p>Variable in mathematical or programming context</p>
+            <code-preview>
+              <p>
+                <var>x</var> = <var>y</var> + 2
+              </p>
+            </code-preview>
+          </section>
 
           <!-- samp -->
+          <section>
+            <element-heading count="57" element="samp"></element-heading>
+            <p>Sample output from a computer program</p>
+            <code-preview>
+              <p>
+                <samp>npm install</samp>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- kbd -->
+          <section>
+            <element-heading count="58" element="kbd"></element-heading>
+            <p>Keyboard input</p>
+            <code-preview>
+              <p>
+                <kbd>Ctrl</kbd> + <kbd>C</kbd>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- sub -->
+          <section>
+            <element-heading count="59" element="sub"></element-heading>
+            <p>Subscript</p>
+            <code-preview>
+              <p>
+                H<sub>2</sub>O
+              </p>
+            </code-preview>
+          </section>
 
           <!-- sup -->
+          <section>
+            <element-heading count="60" element="sup"></element-heading>
+            <p>Superscript</p>
+            <code-preview>
+              <p>
+                2<sup>10</sup>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- u -->
+          <section>
+            <element-heading count="61" element="u"></element-heading>
+            <p>Unarticulated non-textual annotation</p>
+            <code-preview>
+              <p>This paragraph <u class="spelling">wrnogly</u> spells word.</p>
+            </code-preview>
+          </section>
 
           <!-- mark -->
+          <section>
+            <element-heading count="62" element="mark"></element-heading>
+            <p>Highlight</p>
+            <code-preview>
+              <p>
+                <mark>Highlight</mark> this text
+              </p>
+            </code-preview>
+          </section>
 
           <!-- bdi -->
+          <section>
+            <element-heading count="63" element="bdi"></element-heading>
+            <p>Isolates a part of text that might be formatted in a different direction from other text outside it</p>
+            <p>Useful for injecting content with unknown directionality</p>
+            <code-preview>
+              <p>
+                <bdi>Isolates a part of text that might be formatted in a different direction from other text outside it</bdi>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- bdo -->
+          <section>
+            <element-heading count="64" element="bdo"></element-heading>
+            <p>Overrides the current directionality of text</p>
+            <code-preview>
+              <p>
+                <bdo dir="rtl">Overrides the current directionality of text</bdo>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- span -->
+          <section>
+            <element-heading count="65" element="span"></element-heading>
+            <p>Generic inline container</p>
+            <code-preview>
+              <p>
+                Generic <span>inline container</span>
+              </p>
+            </code-preview>
+          </section>
 
           <!-- br -->
+        <section>
+          <element-heading count="66" element="br"></element-heading>
+          <p>Line break</p>
+          <code-preview>
+            <p>
+              Line break
+              <br />
+              enforced
+            </p>
+          </code-preview>
+        </section>
 
           <!-- wbr -->
+        <section>
+          <element-heading count="67" element="wbr"></element-heading>
+          <p>Line break opportunity</p>
+          <code-preview>
+            <p>
+              withaverylongtext Linecanbebreakcanbe<wbr/>done at this given opportunity
+            </p>
+        </section>
         </section>
 
         <section>
@@ -423,7 +669,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;a&gt;</h3>
+            <element-heading count="68" element="a"></element-heading>
             <p>Hyperlink</p>
             <code-preview>
               <a href="https://...">Google</a>
@@ -437,7 +683,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;ins&gt;</h3>
+            <element-heading count="69" element="ins"></element-heading>
             <p>Inserted text - can be used for diffs</p>
             <code-preview>
               <p>Some <ins>inserted text</ins></p>
@@ -445,7 +691,7 @@ function() {
           </section>
 
           <section>
-            <h3>&lt;del&gt;</h3>
+            <element-heading count="70" element="del"></element-heading>
             <p>Deleted text</p>
             <code-preview>
               <p>Some <del>deleted text</del></p>
@@ -459,26 +705,135 @@ function() {
           </section>
 
           <!-- picture -->
+        <section>
+          <element-heading count="71" element="picture"></element-heading>
+          <p>Responsive images</p>
+          <code-preview>
+            <picture>
+              <source srcset="public/elephant.webp" type="image/webp" />
+              <source srcset="public/elephant.jpg" type="image/jpeg" />
+              <img src="public/figure.png" alt="Elephant" />
+            </picture>
+          </code-preview>
+        </section>
 
           <!-- source -->
+          <section>
+            <element-heading count="72" element="source"></element-heading>
+            <p>Media source for video, audio, picture, etc.</p>
+            <code-preview>
+              <video controls>
+                <source src="public/video.mp4" type="video/mp4" />
+                <source src="public/video.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+            </code-preview>
+          </section>
 
           <!-- img -->
+          <section>
+            <element-heading count="73" element="img"></element-heading>
+            <p>Image</p>
+            <code-preview>
+              <img src="public/figure.png" alt="Elephant" />
+            </code-preview>
+          </section>
 
           <!-- iframe -->
+          <section>
+            <element-heading count="74" element="iframe"></element-heading>
+            <p>Inline frame</p>
+            <code-preview>
+              <iframe src="https://www.google.com/" title="Google"></iframe>
+            </code-preview>
+          </section>
 
           <!-- embed -->
+          <section>
+            <element-heading count="75" element="embed"></element-heading>
+            <p>Integration point for external application or interactive content</p>
+            <p>With plugins no longer being a thing, we don't really need this</p>
+            <code-preview>
+              <embed src="public/video.mp4" type="video/mp4" />
+            </code-preview>
+          </section>
 
           <!-- object -->
+          <section>
+            <element-heading count="76" element="object"></element-heading>
+            <p>External resource that can be treated as an image, nested browsing context, or external resource to be processed by a plugin</p>
+            <code-preview>
+              <object data="public/test.pdf" type="application/pdf"></object>
+            </code-preview>
+          </section>
 
           <!-- video -->
+          <section>
+            <element-heading count="77" element="video"></element-heading>
+            <p>Video</p>
+            <code-preview>
+              <video controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+" type="video/mp4" />
+                <source src="public/video.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+            </code-preview>
+          </section>
 
           <!-- audio -->
+          <section>
+            <element-heading count="78" element="audio"></element-heading>
+            <p>Audio</p>
+            <code-preview>
+              <audio controls>
+                <source src="public/audio.mp3" type="audio/mpeg" />
+                <source src="public/audio.ogg" type="audio/ogg" />
+                Your browser does not support the audio tag.
+              </audio>
+            </code-preview>
+          </section>
 
           <!-- track -->
+          <section>
+            <element-heading count="79" element="track"></element-heading>
+            <p>Text track for media elements - can be used for subtitles</p>
+            <code-preview>
+              <video controls>
+                <source src="public/video.mp4" type="video/mp4" />
+                <track
+                  src="public/video.vtt"
+                  kind="captions"
+                  srclang="en"
+                  label="English"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </code-preview>
+          </section>
 
           <!-- map -->
-
-          <!-- area -->
+          <section>
+            <element-heading count="80-81" element="map and area"></element-heading>
+            <p>Image map</p>
+            <code-preview>
+              <img src="public/figure.png" alt="Elephant" usemap="#elephant" />
+              <map name="elephant">
+                <area
+                  shape="rect"
+                  coords="0,0,82,126"
+                  href="https://en.wikipedia.org/wiki/Shark"
+                  alt="Shark"
+                />
+                <area
+                  shape="rect"
+                  coords="82,126,160,240"
+                  href="https://en.wikipedia.org/wiki/Human"
+                  alt="Man"
+                />
+              </map>
+            </code-preview>
+          </section>
         </section>
 
         <section>
@@ -488,10 +843,7 @@ function() {
 
           <!-- table, thead, tbody, tr, th, td -->
           <section>
-            <h3>
-              &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;,
-              &lt;th&gt;, &lt;td&gt;
-            </h3>
+            <element-heading count="82-87" element="table, thead, tbody, tr, th, td"></element-heading>
             <code-preview>
               <table>
                 <thead>
@@ -516,7 +868,7 @@ function() {
 
           <!-- caption, colgroup, col -->
           <section>
-            <h3>&lt;caption&gt;, &lt;colgroup&gt;, &lt;col&gt;</h3>
+            <element-heading count="88-90" element="caption, colgroup, col"></element-heading>
             <code-preview>
               <table>
                 <style>
@@ -561,18 +913,119 @@ function() {
           </section>
 
           <!-- form, input, label, textarea, button -->
+          <section>
+            <element-heading count="91-95" element="form, input, label, textarea, button"></element-heading>
+            <code-preview>
+              <form action="https://example.com" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+                <br>
+
+                <label for="message">Message
+                  <textarea id="message" name="message"></textarea>
+                </label>
+                <br>
+
+                <button type="submit">Submit</button>
+              </form>
+          </section>
 
           <!-- select, option, optgroup -->
+          <section>
+            <element-heading count="96-98" element="select, option, optgroup"></element-heading>
+            <code-preview>
+              <label for="cars">Choose a car:</label>
+              <select name="cars" id="cars">
+                <optgroup label="Swedish Cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </optgroup>
+              </select>
+          </section>
 
           <!-- datalist -->
+          <section>
+            <element-heading count="99" element="datalist"></element-heading>
+            <p>Provide list of suggestions for inputs</p>
+            <code-preview>
+              <label for="cars">Choose a car:</label>
+              <input list="car-list" name="cars" id="cars" />
+              <datalist id="car-list">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </datalist>
+
+              <br>
+              <label for="colors">Pick a color (preferably a red tone):</label>
+              <input type="color" list="redColors" id="colors" />
+              <datalist id="redColors">
+                <option value="#800000"></option>
+                <option value="#8B0000"></option>
+                <option value="#A52A2A"></option>
+                <option value="#DC143C"></option>
+              </datalist>
+            </code-preview>
+          </section>
 
           <!-- output -->
+          <section>
+            <element-heading count="100" element="output"></element-heading>
+            <p>Result of a calculation - not sent with POST</p>
+            <code-preview>
+              <label for="x">x:</label>
+              <input type="number" id="x" name="x" value="7" />
+              <br />
+              <label for="y">y:</label>
+              <input type="number" id="y" name="y" value="8" />
+              <br />
+              <label for="result">x + y =</label>
+              <output name="result" for="x y">15</output>
+            </code-preview>
+          </section>
 
           <!-- progress -->
+          <section>
+            <element-heading count="101" element="progress"></element-heading>
+            <p>Progress bar</p>
+            <code-preview>
+              <progress value="50" max="100">50 %</progress>
+            </code-preview>
+          </section>
 
           <!-- meter -->
+          <section>
+            <element-heading count="102" element="meter"></element-heading>
+            <p>Measurement within a known range</p>
+            <code-preview>
+              <meter value="5" min="0" max="10">2 out of 10</meter>
+              <meter value="2" min="0" max="10" low="3">2 out of 10</meter>
+            </code-preview>
+          </section>
 
           <!-- fieldset, legend -->
+          <section>
+            <element-heading count="103-104" element="fieldset, legend"></element-heading>
+            <p>Group of related form elements</p>
+            <code-preview>
+              <fieldset>
+                <legend>Choose your favorite monster</legend>
+                <input type="radio" id="kraken" name="monster" value="kraken" />
+                <label for="kraken">Kraken</label>
+                <br />
+                <input type="radio" id="sasquatch" name="monster" value="sasquatch" />
+                <label for="sasquatch">Sasquatch</label>
+                <br />
+                <input type="radio" id="mothman" name="monster" value="mothman" />
+                <label for="mothman">Mothman</label>
+              </fieldset>
+            </code-preview>
+          </section>
         </section>
 
         <section>
@@ -582,7 +1035,7 @@ function() {
 
           <!-- details, summary -->
           <section>
-            <h3>&lt;details&gt;, &lt;summary&gt;</h3>
+            <element-heading count="105-106" element="details, summary"></element-heading>
             <code-preview>
               <details>
                 <summary>Click to expand</summary>
@@ -593,7 +1046,8 @@ function() {
 
           <!-- dialog -->
           <section>
-            <h3>&lt;dialog&gt; *new*</h3>
+            <element-heading count="107" element="dialog"></element-heading>
+            <p>Show popups out of the current flow</p>
             <code-preview>
               <dialog open>
                 <p>Dialog text</p>
@@ -608,14 +1062,65 @@ function() {
           </section>
 
           <!-- script -->
+          <section>
+            <element-heading count="108" element="script"></element-heading>
+            <p>JS Script</p>
+            <code-preview hidePreview="true">
+              <script>
+                console.log('Hello World');
+              </script>
+            </code-preview>
+          </section>
 
           <!-- noscript -->
+          <section>
+            <element-heading count="109" element="noscript"></element-heading>
+            <p>Content to be shown if JS is disabled</p>
+            <code-preview hidePreview="true">
+              <noscript>
+                <p>JS is disabled</p>
+              </noscript>
+            </code-preview>
+          </section>
 
           <!-- template -->
+          <section>
+            <element-heading count="110" element="template"></element-heading>
+            <p>Content that can be used as a template to render data, not rendered by default</p>
+            <code-preview>
+              <template>
+                <p>Content that should not be rendered</p>
+              </template>
+            </code-preview>
+          </section>
 
           <!-- canvas -->
+          <section>
+            <element-heading count="111" element="canvas"></element-heading>
+            <p>Bitmap canvas</p>
+            <code-preview>
+              <canvas id="canvas" width="150" height="150"></canvas>
+              <script>
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.fillStyle = "green";
+                ctx.fillRect(10, 10, 150, 100);
+              </script>
+            </code-preview>
+          </section>
 
           <!-- slot -->
+          <section>
+            <element-heading count="112" element="slot"></element-heading>
+            <p>Placeholder for content that can be distributed to multiple insertion points</p>
+            <code-preview hidePreview="true">
+              <div>
+                <slot name="header"></slot>
+                <p>Content</p>
+                <slot name="footer"></slot>
+              </div>
+            </code-preview>
         </section>
       </div>
     </div>

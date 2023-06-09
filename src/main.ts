@@ -10,3 +10,4 @@ deck.initialize({
 });
 
 import "./code-preview";
+import "./element-heading";

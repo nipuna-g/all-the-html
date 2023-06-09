@@ -12,6 +12,9 @@ export class CodePreview extends LitElement {
   @property({ type: String })
   private formattedHTML: any;
 
+  @property({ type: Boolean })
+  private hidePreview: boolean = false;
+
   constructor() {
     super();
     this.formattedHTML = "";
@@ -149,7 +152,10 @@ export class CodePreview extends LitElement {
         )}</code>
         </pre>
 
-        <div class="preview">
+        <div
+          class="preview"
+          style="display: ${this.hidePreview ? "none" : "auto"}"
+        >
           <slot @slotchange=${this.handleSlotchange}></slot>
         </div>
       </div>
