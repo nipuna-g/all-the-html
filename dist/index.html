@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All the HTML elements</title>
+    
+    
+    
+    <script type="module" crossorigin src="/assets/index-df63c702.js"></script>
+    <link rel="stylesheet" href="/assets/index-f575f640.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>All the HTML Elements</h3>
+          <img src="/assets/name-five-elements-a6402dca.png" />
+        </section>
+
+        <section id="elements-of-html">
+          <h3>The Elements of HTML</h3>
+          <p>The list of elements keep changing.</p>
+          <a href="https://html.spec.whatwg.org/#semantics">Living spec</a>
+        </section>
+
+        <section>
+          <h3>&lt;html &gt;</h3>
+          <ul>
+            <li>The document element that contains the head and body</li>
+            <li>The `lang` used here is used to aid text to speech tools</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h3>Document Metadata</h3>
+          </section>
+          <section>
+            <h3>&lt;head &gt;</h3>
+            <p>machine-readable information (metadata) about the document</p>
+          </section>
+          <section>
+            <h3>&lt;title&gt;</h3>
+            <p>document's title</p>
+          </section>
+          <section>
+            <h3>&lt;base&gt;</h3>
+            <p>base URL for relative URLs in the page</p>
+          </section>
+          <section>
+            <h3>&lt;link&gt;</h3>
+            <p>link to an external resource</p>
+            <ul>
+              <li>Mainly used for styles</li>
+              <li>Defining icons and favicons</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;style&gt;</h3>
+            <p>CSS applied to document</p>
+          </section>
+          <section>
+            <h3>&lt;meta&gt;</h3>
+            <p>metadata about the document</p>
+            <ul>
+              <li>character set</li>
+              <li>description</li>
+              <li>viewport</li>
+              <li>etc.</li>
+            </ul>
+            <p></p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Sectioning elements</h3>
+          </section>
+          <section>
+            <h3>&lt;body&gt;</h3>
+            <p>document's content</p>
+          </section>
+          <section>
+            <h3>&lt;article&gt;</h3>
+            <ul>
+              <li>self-contained composition</li>
+              <li>'article of clothing' not 'blog article'</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;section&gt;</h3>
+            <ul>
+              <li>section of article with header and text</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;nav&gt;</h3>
+            <ul>
+              <li>Section with navigation links</li>
+              <li>Examples: header menu, table of content</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;aside&gt;</h3>
+            <ul>
+              <li>Section with tangentially related content</li>
+              <li>Content tangentially related to content</li>
+            </ul>
+            <img src="/assets/aside-27b90de6.png" />
+          </section>
+          <section>
+            <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
+            <p>Headings</p>
+          </section>
+          <section>
+            <h3>&lt;hgroup&gt;</h3>
+            <ul>
+              <li>A heading + paragraph</li>
+              <li>Used to be a group of heading</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;header&gt;</h3>
+            <ul>
+              <li>Can be a site wide header banner</li>
+              <li>Also, can be an article header</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;footer&gt;</h3>
+            <ul>
+              <li>Footer for nearest ancestor sectioning content</li>
+              <li>Or site wide footer</li>
+            </ul>
+          </section>
+          <section>
+            <h3>&lt;address&gt;</h3>
+            <ul>
+              <li>Contact information - address, email etc.</li>
+              <li>FunFact - https://en.wikipedia.org/wiki/Semantic_Web</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Grouping Content</h3>
+          </section>
+          <section>
+            <h3>&lt;p&gt;</h3>
+            <p>Paragraph</p>
+            <code-preview>
+              <p>A paragraph!</p>
+            </code-preview>
+          </section>
+          <section>
+            <h3>&lt;hr&gt;</h3>
+            <p>Thematic break between paragraph-level elements</p>
+            <code-preview>
+              <p>This is a paragraph</p>
+              <hr />
+              <p>This is another paragraph</p>
+            </code-preview>
+          </section>
+          <section>
+            <h3>&lt;pre&gt;</h3>
+            <p>Preformatted text</p>
+            <code-preview>
+              <pre>
+function() {
+  console.log('Hello World');
+}
+</pre
+              >
+            </code-preview>
+          </section>
+          <section>
+            <h3>&lt;blockquote&gt;</h3>
+            <p>Longer quote from another source</p>
+            <code-preview>
+              <blockquote>
+                <p>
+                  The blockquote element represents content that is quoted from
+                  another source, optionally with a citation which must be
+                  within a footer or cite element, and optionally with in-line
+                  changes such as annotations and abbreviations.
+                </p>
+              </blockquote>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;ol&gt; and &lt;li&gt;</h3>
+            <p>Ordered list</p>
+            <code-preview>
+              <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ol>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;ul&gt;</h3>
+            <p>Unordered list</p>
+            <code-preview>
+              <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ul>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;menu&gt;</h3>
+            <p>Same as ul</p>
+          </section>
+
+          <section>
+            <h3>&lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt;</h3>
+            <p>Definition list</p>
+            <code-preview>
+              <dl>
+                <dt>Definition term</dt>
+                <dd>Definition description</dd>
+
+                <dt>Definition term</dt>
+                <dd>Definition description</dd>
+              </dl>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;figure&gt; and &lt;figcaption&gt;</h3>
+            <p>Figure with caption</p>
+            <code-preview>
+              <figure>
+                <img src="/assets/figure-ea251d33.png" />
+                <figcaption>Figure caption</figcaption>
+              </figure>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;main&gt;</h3>
+            <p>
+              Content that is directly related to or expands upon the central
+              topic of a document
+            </p>
+            <code-preview>
+              <main>
+                <p>Article content</p>
+              </main>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;div&gt;</h3>
+            <p>Generic container</p>
+            <code-preview>
+              <div>
+                <p>Article content</p>
+              </div>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;search&gt;</h3>
+            <p>New!</p>
+            https://www.scottohara.me/blog/2023/03/24/search-element.html
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Text-level semantics</h3>
+          </section>
+
+          <section>
+            <h3>&lt;a&gt;</h3>
+            <p>Hyperlink</p>
+            <code-preview>
+              <a href="https://...">Google</a>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;em&gt;</h3>
+            <p>Emphasis</p>
+            <code-preview>
+              <p>
+                <em
+                  >Stress emphasis to a sentence - ex - "This is very important"
+                </em>
+              </p>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;i&gt;</h3>
+            <ul>
+              <li>Idiomatic text</li>
+              <li>Alternate voice or mood</li>
+              <li>Technical term</li>
+              <li>Foreign language phrase</li>
+              <li>Book title, movie title, etc.</li>
+              <br />
+            </ul>
+            <code-preview>
+              <p>I thought <i>This can't be real!</i></p>
+
+              <p>
+                <i>Musa</i> is one of two or three genera in the family
+                <i>Musaceae</i>; it includes bananas and plantains.
+              </p>
+              <p></p
+            ></code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;strong&gt;</h3>
+            <p>Strong importance of a sentence</p>
+            <code-preview>
+              <p>
+                <strong>Never feed him after midnight</strong>
+              </p>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;b&gt;</h3>
+            <p>
+              Stylistically different text without conveying extra importance
+            </p>
+            <code-preview>
+              <p>
+                <b
+                  >Stylistically different text without conveying extra
+                  importance</b
+                >
+                can be in the b tag
+              </p>
+            </code-preview>
+          </section>
+
+          <!-- ruby, rt and rp -->
+          <section>
+            <h3>&lt;ruby&gt;, &lt;rt&gt; and &lt;rp&gt;</h3>
+            <p>Mainly used to annotate CJK characters</p>
+            <ul>
+              <li>ruby - container for base text</li>
+              <li>rt - container for ruby text</li>
+              <li>rp - container for fallback parenthesis</li>
+            </ul>
+
+            <br />
+
+            <code-preview>
+              <ruby>
+                නි <rp>(</rp><rt>ni</rt><rp>)</rp>
+
+                පු <rp>(</rp><rt>pu</rt><rp>)</rp>
+
+                ණ <rp>(</rp><rt>na</rt><rp>)</rp>
+              </ruby>
+            </code-preview>
+          </section>
+
+          <!-- small -->
+
+          <!-- s -->
+
+          <!-- cite -->
+
+          <!-- q -->
+
+          <!-- dfn -->
+
+          <!-- abbr -->
+
+          <!-- data -->
+
+          <!-- time -->
+
+          <!-- code -->
+
+          <!-- var -->
+
+          <!-- samp -->
+
+          <!-- kbd -->
+
+          <!-- sub -->
+
+          <!-- sup -->
+
+          <!-- u -->
+
+          <!-- mark -->
+
+          <!-- bdi -->
+
+          <!-- bdo -->
+
+          <!-- span -->
+
+          <!-- br -->
+
+          <!-- wbr -->
+        </section>
+
+        <section>
+          <section>
+            <h3>Links</h3>
+          </section>
+
+          <section>
+            <h3>&lt;a&gt;</h3>
+            <p>Hyperlink</p>
+            <code-preview>
+              <a href="https://...">Google</a>
+            </code-preview>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Edits</h3>
+          </section>
+
+          <section>
+            <h3>&lt;ins&gt;</h3>
+            <p>Inserted text - can be used for diffs</p>
+            <code-preview>
+              <p>Some <ins>inserted text</ins></p>
+            </code-preview>
+          </section>
+
+          <section>
+            <h3>&lt;del&gt;</h3>
+            <p>Deleted text</p>
+            <code-preview>
+              <p>Some <del>deleted text</del></p>
+            </code-preview>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Embedded content</h3>
+          </section>
+
+          <!-- picture -->
+
+          <!-- source -->
+
+          <!-- img -->
+
+          <!-- iframe -->
+
+          <!-- embed -->
+
+          <!-- object -->
+
+          <!-- video -->
+
+          <!-- audio -->
+
+          <!-- track -->
+
+          <!-- map -->
+
+          <!-- area -->
+        </section>
+
+        <section>
+          <section>
+            <h3>Tabular data</h3>
+          </section>
+
+          <!-- table, thead, tbody, tr, th, td -->
+          <section>
+            <h3>
+              &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;,
+              &lt;th&gt;, &lt;td&gt;
+            </h3>
+            <code-preview>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Table header</th>
+                    <th>Table header</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                </tbody>
+              </table>
+            </code-preview>
+          </section>
+
+          <!-- caption, colgroup, col -->
+          <section>
+            <h3>&lt;caption&gt;, &lt;colgroup&gt;, &lt;col&gt;</h3>
+            <code-preview>
+              <table>
+                <style>
+                  .first-col-group {
+                    background-color: darkgray;
+                  }
+                </style>
+                <caption>
+                  Table caption
+                </caption>
+                <colgroup>
+                  <col span="2" class="first-col-group" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Table header</th>
+                    <th>Table header</th>
+                    <th>Other header</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                  <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                  </tr>
+                </tbody>
+              </table>
+            </code-preview>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Forms</h3>
+          </section>
+
+          <!-- form, input, label, textarea, button -->
+
+          <!-- select, option, optgroup -->
+
+          <!-- datalist -->
+
+          <!-- output -->
+
+          <!-- progress -->
+
+          <!-- meter -->
+
+          <!-- fieldset, legend -->
+        </section>
+
+        <section>
+          <section>
+            <h3>Interactive elements</h3>
+          </section>
+
+          <!-- details, summary -->
+          <section>
+            <h3>&lt;details&gt;, &lt;summary&gt;</h3>
+            <code-preview>
+              <details>
+                <summary>Click to expand</summary>
+                <p>Details text</p>
+              </details>
+            </code-preview>
+          </section>
+
+          <!-- dialog -->
+          <section>
+            <h3>&lt;dialog&gt; *new*</h3>
+            <code-preview>
+              <dialog open>
+                <p>Dialog text</p>
+              </dialog>
+            </code-preview>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Scripting</h3>
+          </section>
+
+          <!-- script -->
+
+          <!-- noscript -->
+
+          <!-- template -->
+
+          <!-- canvas -->
+
+          <!-- slot -->
+        </section>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

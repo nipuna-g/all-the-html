@@ -5,8 +5,10 @@ import { unsafeHTML } from "lit/directives/unsafe-html.js";
 import prettier from "prettier";
 import babelParser from "prettier/parser-html";
 
+// @ts-ignore
 @customElement("code-preview")
-class CodePreview extends LitElement {
+export class CodePreview extends LitElement {
+  // @ts-ignore
   @property({ type: String })
   private formattedHTML: any;
 
@@ -154,11 +156,11 @@ class CodePreview extends LitElement {
     `;
   }
 
-  handleSlotchange(e) {
+  handleSlotchange(e: any) {
     const childNodes = e.target.assignedNodes();
     this.formattedHTML = childNodes
-      .map((node) => node.outerHTML)
-      .filter((outerHtml) => {
+      .map((node: any) => node.outerHTML)
+      .filter((outerHtml: string) => {
         console.log(outerHtml);
         return !!outerHtml && outerHtml !== "/n";
       })
